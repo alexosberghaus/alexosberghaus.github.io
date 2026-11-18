@@ -1,0 +1,320 @@
+/* Alex Osberghaus — personal website */
+
+:root {
+  --text: #1f2328;
+  --muted: #5b636d;
+  --accent: #2f5d7c;
+  --accent-soft: #e8eff4;
+  --rule: #dfe3e8;
+  --bg: #ffffff;
+  --band: #f3f5f6;
+  --max: 46rem;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+/* ---------- Header & navigation ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-header .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+}
+
+.site-name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.site-name:hover { text-decoration: none; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.4rem;
+}
+
+nav a {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
+nav a:hover { color: var(--text); }
+
+/* ---------- Sections ---------- */
+
+/* Keep section titles visible below the sticky menu when jumping to them */
+main section { scroll-margin-top: 3.5rem; }
+
+/* Each section spans the full width; its content sits in a centred column */
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.75rem 1.25rem 3rem;
+}
+
+/* Light grey bands for Research and Discussions */
+.band {
+  background: var(--band);
+  border-top: 1px solid var(--rule);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: normal;
+  margin: 0 0 1.25rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- Home ---------- */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.role {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.links {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
+
+.portrait {
+  width: 10.5rem;
+  height: 10.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.lead { margin: 2rem 0 0; }
+
+.news { margin-top: 2.25rem; }
+
+h3.label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 0;
+  padding: 0;
+  margin: 0 0 0.6rem;
+}
+
+ul.dated {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.dated li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem 0;
+}
+ul.dated .date {
+  flex: 0 0 5.2rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  padding-top: 0.15rem;
+}
+
+/* ---------- Papers ---------- */
+
+.paper { margin: 0 0 1.7rem; }
+
+.title { font-weight: 600; }
+.title .year { font-weight: normal; color: var(--muted); }
+
+.authors { color: var(--muted); }
+
+.toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.toggle {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0.15rem 0.6rem;
+  cursor: pointer;
+}
+.toggle:hover { background: var(--accent-soft); text-decoration: none; }
+.toggle[aria-expanded="true"] { background: var(--accent); color: #fff; }
+
+.panel {
+  margin-top: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: #ffffff;
+  border-left: 3px solid var(--accent);
+  font-size: 0.95rem;
+  text-align: justify;
+  hyphens: auto;
+}
+.panel p { margin: 0 0 0.6rem; }
+.panel p:last-child { margin-bottom: 0; }
+.panel[hidden] { display: none; }
+
+.note {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+/* Presentation lists: one talk per line, year on the right */
+ul.talks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ul.talks li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0 0.35rem 1rem;
+  border-top: 1px solid #eef0f2;
+  position: relative;
+}
+ul.talks li:first-child { border-top: 0; }
+ul.talks .loc {
+  color: var(--muted);
+}
+ul.talks .loc::before { content: " · "; }
+ul.talks .yr {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  padding-top: 0.1rem;
+}
+
+/* "presented by me" marker */
+.dot, ul.talks li.me::before {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+ul.talks li.me::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0 0.35rem;
+  vertical-align: 0.1em;
+}
+a.tag-link { color: var(--accent); border-color: var(--accent); }
+
+ul.plain {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.plain li { margin: 0 0 0.9rem; }
+
+/* ---------- Footer ---------- */
+
+footer {
+  background: var(--band);
+  border-top: 1px solid var(--rule);
+}
+footer .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 2rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .hero { flex-direction: column-reverse; align-items: flex-start; gap: 1.25rem; }
+  .portrait { width: 7.5rem; height: 7.5rem; }
+  h1 { font-size: 2rem; }
+  .panel { text-align: left; hyphens: manual; }
+  ul.dated li { flex-direction: column; gap: 0; }
+  ul.dated .date { flex-basis: auto; }
+}
