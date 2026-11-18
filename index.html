@@ -8,13 +8,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Alex Osberghaus">
   <meta property="og:description" content="Assistant Professor at CEMFI, Madrid. Research in financial intermediation and corporate finance.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232f5d7c'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EAO%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238a3324'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EAO%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="site-name" href="#home">Alex Osberghaus</a>
+      <a class="site-name caps" href="#home">Alex Osberghaus</a>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -25,22 +28,23 @@
     </div>
   </header>
 
+  <div class="banner" style="--banner: url('banner.jpg')" role="img" aria-label="Sunrise over the Alps"></div>
+
   <main>
-    <!-- ============ HOME ============ -->
     <section id="home">
       <div class="wrap">
         <div class="hero">
+          <img class="portrait" src="photo.jpg" alt="Alex Osberghaus">
           <div class="hero-text">
             <h1>Alex Osberghaus</h1>
-            <p class="role">Assistant Professor<br>CEMFI, Madrid</p>
+            <p class="role">Assistant Professor, CEMFI, Madrid</p>
             <p class="links">
-              <a href="https://drive.google.com/file/d/1aX8utpg2klp2qqdIqT_7MOVW9wXz0as-/view">CV</a>
-              <a href="https://scholar.google.com/citations?user=nNg_flYAAAAJ&amp;hl=de&amp;oi=ao">Google Scholar</a>
-              <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4593217">SSRN</a>
-              <a href="mailto:alex.osberghaus@cemfi.es">alex.osberghaus@cemfi.es</a>
+              <a class="caps" href="files/CV_Osberghaus.pdf">CV</a>
+              <a class="caps" href="https://scholar.google.com/citations?user=nNg_flYAAAAJ&amp;hl=de&amp;oi=ao">Google Scholar</a>
+              <a class="caps" href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4593217">SSRN</a>
+              <a class="caps" href="mailto:alex.osberghaus@cemfi.es">Email</a>
             </p>
           </div>
-          <img class="portrait" src="photo.jpg" alt="Alex Osberghaus">
         </div>
 
         <p class="lead">I'm an Assistant Professor at <a href="https://www.cemfi.es/">CEMFI</a>.
@@ -58,7 +62,6 @@
       </div>
     </section>
 
-    <!-- ============ RESEARCH ============ -->
     <section id="research" class="band">
       <div class="wrap">
         <h2>Research</h2>
@@ -74,15 +77,15 @@
         -->
 
         <div class="paper">
-          <div class="title">Synthetic, but How Much Risk Transfer? <span class="year">(2025)</span></div>
-          <div class="authors">with <a href="https://sites.google.com/site/schepensglenn">G. Schepens</a></div>
+          <div class="title">Synthetic, but How Much Risk Transfer? <span class="year">(2026)</span></div>
+          <div class="authors">with <a href="http://www.glennschepens.com/">G. Schepens</a></div>
           <div class="toggles">
             <a class="toggle" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5120049">SSRN</a>
             <button class="toggle" aria-expanded="false" aria-controls="srt-abstract">Abstract</button>
             <button class="toggle" aria-expanded="false" aria-controls="srt-talks">Selected presentations</button>
           </div>
           <div class="panel" id="srt-abstract" hidden>
-            <p>Banks use synthetic risk transfers (SRTs) to lay off potential losses in their loan portfolios to non-bank investors while retaining the loans on their balance sheets. We investigate this trillion-euro market using transaction-level data from the euro area, the largest SRT market, and highlight three channels of potential risks to financial stability. First, we causally show that banks synthetically transfer loans that are capital-expensive relative to their riskiness. As banks redeploy the freed capital, they become effectively less capitalized. Second, after entering an SRT, banks reduce their monitoring efforts compared to other banks lending to the same firm. Third, banks and non-bank investors are interconnected. Banks are more likely to sell SRTs to investors to which they also grant credit, and total bank credit to these investors increases before the SRT investment, suggesting that SRTs are partially debt-financed. The investors' leverage, however, remains modest.</p>
+            <p>Banks use synthetic risk transfers (SRTs) to offload potential losses in their loan portfolios to non-bank investors while retaining the loans on their balance sheets. We investigate this trillion-euro market using transaction-level data from the euro area, the largest SRT market, and highlight three channels of potential risks to financial stability. First, we causally show that banks synthetically transfer loans that are capital-expensive relative to their riskiness. As banks redeploy the freed capital, they become effectively less capitalized. Second, after entering an SRT, banks reduce their monitoring efforts compared to other banks lending to the same firm. Third, banks and non-bank investors are interconnected. Banks are more likely to sell SRTs to investors to which they also grant credit, and total bank credit to these investors increases before the SRT investment, suggesting that SRTs are partially debt-financed. The investors' leverage, however, remains modest.</p>
           </div>
           <div class="panel" id="srt-talks" hidden>
             <p class="note">Including scheduled; all presented by me.</p>
@@ -100,16 +103,16 @@
         </div>
 
         <div class="paper">
-          <div class="title">Joining Forces: Why Banks Syndicate Credit <span class="year">(2024)</span></div>
+          <div class="title">Joining Forces: Why Banks Syndicate Credit <span class="year">(2026)</span></div>
           <div class="authors">with <a href="https://sites.google.com/site/stevenongena/">S. Ongena</a>
-            and <a href="https://sites.google.com/site/schepensglenn">G. Schepens</a></div>
+            and <a href="http://www.glennschepens.com/">G. Schepens</a></div>
           <div class="toggles">
             <a class="toggle" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4943344">SSRN</a>
             <button class="toggle" aria-expanded="false" aria-controls="jf-abstract">Abstract</button>
             <button class="toggle" aria-expanded="false" aria-controls="jf-talks">Selected presentations</button>
           </div>
           <div class="panel" id="jf-abstract" hidden>
-            <p>Banks can grant loans to firms bilaterally or in syndicates. We study this choice by combining bilateral loan data with syndicated loan data. We show that loan size alone does not adequately explain syndication. Instead, banks’ ability to manage risks and firm riskiness drive the choice to syndicate. Banks are more likely to syndicate loans if their risk-bearing capacity is low and if screening and monitoring come at a high cost. Syndicated loans are more expensive and more sensitive to loan risk than bilateral loans. Our findings contradict the hypothesis that reputable borrowers graduate to the syndicated loan market.</p>
+            <p>Banks can grant loans to firms bilaterally or in syndicates. We study this choice by combining bilateral loan data with syndicated loan data. We show that loan size alone does not adequately explain syndication. Instead, banks' ability to manage risks and firm riskiness drive the choice to syndicate. Banks are more likely to syndicate loans if their risk-bearing capacity is low and if screening and monitoring come at a high cost. Syndicated loans are more expensive and more sensitive to loan risk than bilateral loans are. Our findings contradict the belief that reputable borrowers graduate to the syndicated loan market.</p>
           </div>
           <div class="panel" id="jf-talks" hidden>
             <p class="note"><span class="dot"></span> presented by me</p>
@@ -139,10 +142,17 @@
         <ul class="plain">
           <li><span class="title">Reporting Biases in Syndicated Loan Data</span>
             <div class="authors">with <a href="https://sites.google.com/site/stevenongena/">S. Ongena</a>
-            and <a href="https://sites.google.com/site/schepensglenn">G. Schepens</a></div></li>
+            and <a href="http://www.glennschepens.com/">G. Schepens</a>
+            [draft available upon request]</div>
+            <div class="toggles">
+              <button class="toggle" aria-expanded="false" aria-controls="rb-abstract">Abstract</button>
+            </div>
+            <div class="panel" id="rb-abstract" hidden>
+              <p>Syndicated loan data from commercial databases are widely used in academic research, but they typically cover a non-random sample of loans and only report information at origination. We study the resulting biases by merging DealScan with AnaCredit, the ECB’s mandatory credit registry. DealScan covers only 20% of syndicated loans in AnaCredit, and reporting is highly lender-specific. Using only DealScan and standard balance-sheet data, we can predict loan reporting very accurately, which allows us to propose a practical method to correct the sampling bias. We apply this method to the settings of 11 papers that use DealScan and show that the correction changes the estimates substantially. Tracking loans after origination, we find that lead arrangers that retain a larger share at origination sell more of it subsequently, whereas no such relationship exists for non-lead participants. This is consistent with lead arrangers holding excess loan supply that they sell shortly after origination.</p>
+            </div></li>
           <li><span class="title">Why do Banks Synthetically Transfer Loans?</span>
             <div class="authors">with <a href="https://sites.google.com/site/andreasfuster/Home">A. Fuster</a>
-            and <a href="https://sites.google.com/site/schepensglenn">G. Schepens</a></div></li>
+            and <a href="http://www.glennschepens.com/">G. Schepens</a></div></li>
         </ul>
 
         <h3>Book Chapter</h3>
@@ -160,7 +170,6 @@
       </div>
     </section>
 
-    <!-- ============ DISCUSSIONS ============ -->
     <section id="discussions" class="band">
       <div class="wrap">
         <h2>Discussions</h2>
@@ -169,7 +178,7 @@
           <div class="title">The Option Value of Public Liquidity: Evidence from Regional Collateral Policies <span class="year">(2026)</span></div>
           <div class="authors">by Chavaz and Dlugosz · 12th IWH-FIN-FIRE Workshop on “Challenges to Financial Stability” 2026</div>
           <div class="toggles">
-            <a class="toggle" href="https://drive.google.com/file/d/12DZLNgQ1BinybeZVeUmx6j7KQi7d7gZk/view?usp=sharing">Discussion</a>
+            <a class="toggle" href="files/discussion_Chavaz_Dlugosz.pdf">Discussion</a>
           </div>
         </div>
 
@@ -177,16 +186,14 @@
           <div class="title">Common Lenders and Borrower Return Comovement <span class="year">(2026)</span></div>
           <div class="authors">by Eufinger, Lin, Raponi, and Wang · BSE Summer Forum 2026</div>
           <div class="toggles">
-            <a class="toggle" href="https://drive.google.com/file/d/18YWmEvcrl_7tIOvUi5EonlWy6pa2FZSm/view?usp=sharing">Discussion</a>
+            <a class="toggle" href="files/discussion_Eufinger_Lin_Raponi_Wang.pdf">Discussion</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="inner">Last updated: November 2026</div>
-  </footer>
+  <footer><div class="inner">Last updated: November 2026</div></footer>
 
   <script>
     // Each button shows/hides the panel named in its aria-controls attribute.
