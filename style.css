@@ -169,12 +169,12 @@ nav a:hover { color: var(--accent); }
 
 .hero {
   display: flex; align-items: flex-start; gap: 1.75rem;
-  margin-top: -4.75rem;         /* portrait overlaps the banner */
+  margin-top: -5.1rem;          /* portrait overlaps the banner */
   margin-bottom: 2.25rem;
 }
-.hero-text { padding-top: 5.4rem; }  /* keeps the name below the photo */
+.hero-text { padding-top: 5.75rem; }  /* keeps the name below the photo */
 .portrait {
-  width: 9.5rem; height: 9.5rem; object-fit: cover; border-radius: 50%;
+  width: 10.5rem; height: 10.5rem; object-fit: cover; border-radius: 50%;
   border: 5px solid var(--paper); flex-shrink: 0; background: var(--paper);
 }
 .hero h1 { font-size: 2.7rem; line-height: 1.05; margin: 0 0 0.35rem; }
@@ -191,9 +191,9 @@ footer { background: var(--band); border-top: 1px solid var(--rule); }
 footer .inner { max-width: 48rem; margin: 0 auto; padding: 1.2rem 1.5rem 2rem; color: var(--muted); font-size: 0.85rem; font-style: italic; }
 
 @media (max-width: 640px) {
-  .hero { flex-direction: column; align-items: flex-start; gap: 0.9rem; margin-top: -3.75rem; }
+  .hero { flex-direction: column; align-items: flex-start; gap: 0.9rem; margin-top: -4.1rem; }
   .hero-text { padding-top: 0; }
-  .portrait { width: 7.5rem; height: 7.5rem; }
+  .portrait { width: 8.25rem; height: 8.25rem; }
   .hero h1 { font-size: 2.2rem; }
   nav ul { gap: 1.1rem; }
 }
